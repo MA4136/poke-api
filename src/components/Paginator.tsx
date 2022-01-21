@@ -14,7 +14,7 @@ const Paginator = ({counter, currentPage, setPage, prevPage, nextPage}: IPaginat
   let pages = Array.from({length: counter}, (_, idx) => ++idx)
 
   if (currentPage >= 11) {
-    pages = [...pages.slice(currentPage - 5, currentPage), ...pages.slice(currentPage, currentPage + 5)]
+    pages = [...pages.slice(currentPage - 6, currentPage), ...pages.slice(currentPage, currentPage + 5)]
   } else {
     pages = pages.slice(0, 11)
   }

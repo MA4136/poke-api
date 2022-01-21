@@ -1,5 +1,11 @@
 import {css} from "@emotion/css";
 
+export const list = css`
+  display: inline-flex;
+  list-style-type: none;
+  margin: 1em auto;
+  padding: 0;
+`
 export const listItem = css`
   font-family: "Russo One", sans-serif;
   text-align: center;
@@ -15,6 +21,7 @@ export const listItem = css`
     color: white;
     background: #282c34;
     border: 1px solid darkred;
+    cursor: pointer;
   }
 
   &:active {
@@ -42,6 +49,7 @@ export const btn = css`
     color: white;
     background: #282c34;
     border: 2px solid darkred;
+    cursor: pointer;
   }
 
   &.disabled {
@@ -50,10 +58,3 @@ export const btn = css`
     color: white;
     border: 2px solid white;
   }`
-
-export const list = css`
-  display: inline-flex;
-  list-style-type: none;
-  margin: 1em auto;
-  padding: 0;
-`
